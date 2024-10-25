@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Premium Mini</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #030202;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            width: 150px;
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+        }
+
+        header nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: #0b0bc1;
+        }
+
+        
+        .hero {
+            background-color: #030202;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom:2px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 0px;
+        }
+
+        .hero .buttons {
+            margin-top: 1rem;
+        }
+
+        .hero button {
+            background-color: #1DB954;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .hero button:hover {
+            background-color: #17a848;
+        }
+
+        .comparison {
+            padding: 2rem;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .comparison h2 {
+            margin-bottom: 10px;
+        }
+
+        .comparison table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        .comparison th, .comparison td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .comparison th {
+            background-color: #f4f4f4;
+        }
+
+        .premium-options {
+            background-color: #f1f1f1;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .premium-options h2 {
+            margin-bottom: 20px;
+        }
+
+        .plans {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .plan {
+            background-color: #fff;
+            padding: 1rem;
+            margin: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 220px;
+        }
+
+        .plan h3 {
+            margin-bottom: 1rem;
+        }
+
+        .plan ul {
+            list-style-type: none;
+            margin-bottom: 1rem;
+        }
+
+        .plan button {
+            background-color: #1DB954;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .plan button:hover {
+            background-color: #17a848;
+        }
+
+        .student-discount {
+            padding: 2rem;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .student-discount h2 {
+            margin-bottom: 30px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        form input, form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        form button {
+            background-color: #0ec950;
+            color: rgb(219, 213, 213);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        form button:hover {
+            background-color: #17a848;
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://i.pinimg.com/736x/e1/92/4e/e1924e2d71900848f3a411a83b027415.jpg"  
+        alt="Spotify Logo">
+        <nav>
+            <a href="#">Contact</a>
+            <a href="#">Premium</a>
+            <a href="#">Download</a>
+            <div class="social-icons">
+            
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Introducing Premium Mini</h1>
+        <p>₹7 for 1 day. ₹25 for 1 week.</p>
+        <div class="buttons">
+            <button><i class="fa-brands fa-google-play"></i> DOWNLOAD</button>
+            <button><i class="fa-brands fa-apple"></i> DOWNLOAD</button>
+        </div>
+    </section>
+
+    <section class="comparison">
+        
+        
+        <h2>Experience the difference</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>What you get</th>
+                    <th>Premium Plan</th>
+                    <th>Free Plan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Access to all audio content</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Ad-free music listening</td>
+                    <td>✔</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <td>Enhanced playlists</td>
+                    <td>✔</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <td>Download songs</td>
+                    <td>✔</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <td>Group sessions</td>
+                    <td>✔</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <td>Highest audio quality</td>
+                    <td>✔</td>
+                    <td>❌</td>
+                </tr>
+        </table>
+    </section>
+    
+    <center>
+        Get 3 month of Premium for free <br>
+   <button>GET 3 MONTH FOR FREE 0</button>
+   
+
+</center>
+
+    <br>
+<section class="premium-options">
+        <h1>Pick your Premium</h1>
+         <P>Listen without limits on your phone, speaker, and other devices.</P>
+        <div class="plans">
+            <div class="plan">
+                <h3>Mini</h3>
+                <p>From ₹7/day</p>
+                <ul>
+                    <li>Ad-free music on mobile</li>
+                    <li>Group session</li>
+                    <li>Download 30 songs on 1 mobile device</li>
+                </ul>
+                <button>View Plans</button>
+            </div>
+
+            <div class="plan">
+                <h3>Individual</h3>
+                <p>₹119/month</p>
+                <ul>
+                    <li>Ad-free music listening</li>
+                    <li>Group session</li>
+                    <li>Download 10k songs on 5 devices</li>
+                </ul>
+                <button>View Plans</button>
+            </div>
+
+            <div class="plan">
+                <h3>Duo</h3>
+                <p>₹149/month</p>
+                <ul>
+                    <li>For couples who live together</li>
+                    <li>Ad-free music on mobile</li>
+                    <li>Download 10k songs/devices on 5 devices per account</li>
+                </ul>
+                <button>View Plans</button>
+            </div>
+
+            <div class="plan">
+                <h3>Family</h3>
+                <p>₹179/month</p>
+                <ul>
+                    <li>Up to 6 accounts</li>
+                    <li>Block explicit music</li>
+                    <li>Ad-free music on mobile</li>
+                    <li>Group session</li>
+                    <li>Download 10k songs/devices on 5 devices</li>
+                </ul>
+                <button>View Plans</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="student-discount">
+        <h2>Special discount for eligible students in university</h2>
+        <form>
+            <input type="email" placeholder="Email address" required>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="text" placeholder="Name of your school or university" required>
+            <input type="tel" placeholder="Contact Number" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<footer id="contact">
+<a href="#"> <i class="fa-brands fa-twitter"></i></a>
+<a href="#"> <i class="fa-brands fa-instagram"></i></a>
+<a href="#"> <i class="fa-brands fa-facebook"></i></a>
+<a href="#"> <i class="fa-solid fa-envelope"></i></a>
+<p>Copyright 2022 Spotify.</p>
+</footer>
+</body>
+    
+
+        
+       
